@@ -1,0 +1,25 @@
+<html ng-app="SampleApp">
+    <head>
+        <title>Example App</title>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h1>Sample App</h1>
+        <br>
+        <div ng-controller="TestCtrl3">
+            <p>{{testProp}}</p>
+            <div ng-controller="TestCtrl4">
+                <p>{{testProp}}</p>
+            </div>
+        </div>
+        
+        <br>
+        <div ng-controller="TestCtrl1 as c1">
+            <p>{{c1.testProp}}</p>
+            <div ng-controller="TestCtrl2 as c2">
+                <p>{{c2.testProp}}</p>
+            </div>
+        </div>        
+    </body>
+</html>

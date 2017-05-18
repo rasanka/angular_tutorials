@@ -1,0 +1,25 @@
+<html ng-app="LoopingApp">
+    <head>
+        <title>Example App</title>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h1>Sample App</h1>
+        <br>
+        <div ng-controller="LoopCtrl as ctrl">
+            <div ng-repeat="i in ctrl.myList">
+                <p>
+                    {{$index}} - {{i}} #FIRST- {{$first}} #LAST- {{$last}} #MIDDLE- {{$middle}} #EVEN- {{$even}} #ODD- {{$odd}}
+                </p>
+            </div>
+            <hr>
+            <div ng-repeat="obj in ctrl.objList">
+                <p>
+                    {{obj.name}} {{obj.age}}
+                </p>
+            </div>
+            </hr>
+        </div>
+    </body>
+</html>

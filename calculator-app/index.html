@@ -1,0 +1,23 @@
+<html ng-app="CalculatorApp">
+    <head>
+        <title>Calculator App</title>
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="CalcCtrl">
+        <h1>Calculator App</h1>
+        <br>
+        <div>
+            <input type="text" ng-model="text1"/>
+            <input type="text" ng-model="text2"/>
+            <button ng-click="calculate()">=</button>
+            <input type="text" ng-model="result"/>
+        </div>
+        <div>
+            +<input type="radio" ng-model="operator" value="+"/>
+            -<input type="radio" ng-model="operator" value="-"/>
+            *<input type="radio" ng-model="operator" value="*"/>
+            /<input type="radio" ng-model="operator" value="/"/>
+        </div>
+    </body>
+</html>
